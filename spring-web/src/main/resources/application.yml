@@ -1,0 +1,17 @@
+server:
+  port: 3003
+test:
+  name: hello world!
+spring:
+  security:
+    user:
+      name: test
+      password: 123456
+      roles:
+        - user
+        - admin
+  datasource:
+    url: jdbc:mysql://localhost:3306/book_manage
+    username: root
+    password: 123456789
+    driver-class-name: com.mysql.cj.jdbc.Driver
