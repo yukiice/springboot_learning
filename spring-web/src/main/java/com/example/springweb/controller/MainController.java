@@ -3,6 +3,7 @@ package com.example.springweb.controller;
 import com.example.springweb.entity.Student;
 import com.example.springweb.entity.User;
 import com.example.springweb.service.AuthService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -15,6 +16,7 @@ import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
 
 
+@Slf4j
 @RequestMapping("/page/auth")
 @Controller
 public class MainController {
@@ -28,6 +30,7 @@ public class MainController {
 //    用户登录页面
     @RequestMapping(value = "/login")
     public String login(){
+        log.info("用户进入了登录页面");
         return  "login";
     }
 
