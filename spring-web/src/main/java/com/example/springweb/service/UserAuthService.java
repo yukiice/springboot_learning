@@ -18,6 +18,7 @@ public class UserAuthService  implements UserDetailsService {
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         com.example.springweb.entity.User user = mapper.finUserByName(username);
+        System.out.println(user);
         if(user == null)
             throw new UsernameNotFoundException("登录失败，用户名或密码错误！");
         return User
