@@ -1,12 +1,13 @@
-package com.example.springweb;
+package com.example;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringWebApplication {
+public class SpringRedisApplication {
+
     public static void main(String[] args) {
-        SpringApplication.run(SpringWebApplication.class, args);
+        SpringApplication.run(SpringRedisApplication.class, args);
     }
 
 }
