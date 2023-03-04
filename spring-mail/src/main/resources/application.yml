@@ -8,9 +8,9 @@ spring:
   jpa:
     show-sql: true
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
   datasource:
-    url: jdbc:mysql://localhost:3306/book_manage
+    url: jdbc:mysql://localhost:3306/jpa
     username: root
     password: 123456789
     driver-class-name: com.mysql.cj.jdbc.Driver

@@ -8,7 +8,6 @@ import javax.persistence.*;
 @Entity
 @Table(name = "account")
 public class Account {
-
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
@@ -19,4 +18,7 @@ public class Account {
 
     @Column(name = "password")
     String password;
+
+    @Column(name = "auth")
+    String auth;
 }
