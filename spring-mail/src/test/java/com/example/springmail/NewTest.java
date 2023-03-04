@@ -20,4 +20,11 @@ public class NewTest {
             account.getScoreList().forEach(System.out::println);
         });
     }
+
+//    修改密码
+    @Test
+    void changePwd(){
+        int i = repository.updatePasswordById("admin","333");
+        System.out.println(i);
+    }
 }
