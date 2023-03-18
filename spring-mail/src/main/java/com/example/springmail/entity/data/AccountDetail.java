@@ -1,4 +1,4 @@
-package com.example.springmail.entity;
+package com.example.springmail.entity.data;
 
 import lombok.Data;
 

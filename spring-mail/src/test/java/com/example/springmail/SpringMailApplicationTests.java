@@ -1,13 +1,9 @@
 package com.example.springmail;
-import com.example.springmail.entity.Account;
-import com.example.springmail.entity.AccountDetail;
+import com.example.springmail.entity.data.Account;
+import com.example.springmail.entity.data.AccountDetail;
 import com.example.springmail.repo.AccountRepository;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.mail.SimpleMailMessage;
-import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;

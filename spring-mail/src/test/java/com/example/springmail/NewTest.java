@@ -1,6 +1,5 @@
 package com.example.springmail;
 
-import com.example.springmail.entity.Account;
 import com.example.springmail.repo.AccountRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

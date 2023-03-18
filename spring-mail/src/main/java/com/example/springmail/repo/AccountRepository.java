@@ -1,6 +1,6 @@
 package com.example.springmail.repo;
 
-import com.example.springmail.entity.Account;
+import com.example.springmail.entity.data.Account;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
