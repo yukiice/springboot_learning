@@ -48,5 +48,10 @@ public class UserServiceImpl implements UserService {
         return  mapper.getUserByLikeName(username);
     }
 
+    @Override
+    public int deleteUserMore(String id) {
+        return mapper.deleteUserMore(id);
+    }
+
 
 }

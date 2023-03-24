@@ -70,4 +70,10 @@ public class TestController {
     public List<User> getListByLike(@RequestParam("username") String username){
         return  service.getUserByLikeName(username);
     }
+
+//    批量删除
+    @PostMapping(value = "delete")
+    public int deleteById(String id){
+        return  service.deleteUserMore(id);
+    }
 }

@@ -16,4 +16,6 @@ public interface UserService{
 
 
     List<User> getUserByLikeName(String username);
+
+    int deleteUserMore(String id);
 }

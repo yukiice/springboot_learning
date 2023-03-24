@@ -29,4 +29,8 @@
     <select id="getUserByLikeName" resultType="User">
         select * from tb_user where username like "%"#{username}"%"
     </select>
+
+    <delete id="deleteUserMore">
+        delete from tb_user where id in (${id})
+    </delete>
 </mapper>
