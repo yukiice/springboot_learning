@@ -21,4 +21,12 @@
     <select id="getUserListByMap" resultType="Map">
         select id,username,password from tb_user where  username = #{username} limit 1
     </select>
+
+<!--    模糊查询1-->
+<!--    <select id="getUserByLikeName" resultType="User">-->
+<!--        select * from tb_user where username like '%${username}%'-->
+<!--    </select>-->
+    <select id="getUserByLikeName" resultType="User">
+        select * from tb_user where username like "%"#{username}"%"
+    </select>
 </mapper>

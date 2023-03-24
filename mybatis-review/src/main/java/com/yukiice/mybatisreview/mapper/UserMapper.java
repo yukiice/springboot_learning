@@ -21,4 +21,7 @@ public interface UserMapper {
 
    @MapKey("id")
    Map<Integer,User> getUserListByMap(@Param("username") String username);
+
+//   模糊查询
+   List<User> getUserByLikeName(@Param("username") String username);
 }

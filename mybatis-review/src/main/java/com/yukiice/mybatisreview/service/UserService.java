@@ -2,6 +2,7 @@ package com.yukiice.mybatisreview.service;
 
 import com.yukiice.mybatisreview.entity.User;
 
+import java.util.List;
 import java.util.Map;
 
 public interface UserService{
@@ -12,4 +13,7 @@ public interface UserService{
     int getUserCount();
 
     Map<Integer,User> getUserListByMap(String username);
+
+
+    List<User> getUserByLikeName(String username);
 }

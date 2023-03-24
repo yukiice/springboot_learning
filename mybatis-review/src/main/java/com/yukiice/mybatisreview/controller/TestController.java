@@ -64,4 +64,10 @@ public class TestController {
         System.out.println(map);
         return  map;
     }
+
+//    模糊查询
+    @GetMapping(value = "like")
+    public List<User> getListByLike(@RequestParam("username") String username){
+        return  service.getUserByLikeName(username);
+    }
 }
