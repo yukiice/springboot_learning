@@ -1,0 +1,23 @@
+server:
+  port: 4007
+spring:
+  application:
+    name: mybatis-plus-learn
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/mybatisplus?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+      username: root
+      password: 123456789
+#  profiles:
+#    active: pro
+mybatis-plus:
+  configuration:
+    #???????????????????????????????????????
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: ASSIGN_ID
+#      table-prefix: t_   // 设置实体类对应的表名字的统一前缀
+  mapper-locations: classpath*:/mapper/*.xml
