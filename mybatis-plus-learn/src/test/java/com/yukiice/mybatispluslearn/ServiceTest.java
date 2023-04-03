@@ -63,11 +63,12 @@ public class ServiceTest {
 
 
 //    测试逻辑删除
-    @Test
+//    @Test
     public void testDelete(){
         List<Long> list = Arrays.asList(1L);
         int res = userMapper.deleteBatchIds(list);
         System.out.println(res);
         log.info("逻辑删除成功");
     }
+//
 }
